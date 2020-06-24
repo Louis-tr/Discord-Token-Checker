@@ -57,10 +57,7 @@ def main():
     doIntro()
 
     if not os.path.exists(tokenFileName + ".txt"):
-        println("Token file does not exist!")
-        println("Press any key to continue...")
-        input()
-        exit()
+        open(tokenFileName + '.txt', 'a+') # create the .txt file instead of exiting the program
     
     try:
         for item in open(tokenFileName + ".txt", "r").readlines():
