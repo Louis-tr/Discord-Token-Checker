@@ -4,7 +4,6 @@ from colorama import Fore, init
 init()
 
 request_url = "https://canary.discordapp.com/api/v6/users/@me"
-hwid = subprocess.check_output('wmic csproduct get uuid').decode('UTF-8').strip().split('\n')[1]
 
 def doIntro():
     os.system("cls")
